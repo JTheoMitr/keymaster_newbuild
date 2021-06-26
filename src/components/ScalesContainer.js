@@ -8,19 +8,31 @@ class ScalesContainer extends React.Component {
 
     componentDidMount() {
         
-        fetchScales()
+        this.props.fetchScalesHere()
         
+    }
+
+    renderScaleCards = () => {
+        return this.props.scales.map(scale => <ScaleCard id={scale.id} key={scale.id} name={scale.name} notes={scale.notes} description={scale.description}/>)
     }
 
     render() {
     
         return(
             <div>
-                <h1>Scales Container</h1>
+                {this.renderScaleCards()}
             </div>
         )
     }
 
 }
 
-export default connect()(ScalesContainer)
+const mapStateToProps = (state) => {
+    return {scales: state.scales}
+}
+
+const mapDispatchToProps = (dispatch) => {
+    return { fetchScalesHere: () => { dispatch(fetchScales()) }}
+}
+
+export default connect(mapStateToProps, mapDispatchToProps)(ScalesContainer)
