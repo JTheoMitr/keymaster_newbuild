@@ -1,6 +1,6 @@
 import React from 'react'
 import ScaleCard from './ScaleCard'
-import Form from './Form'
+// import Form from './Form'
 import { connect } from 'react-redux'
 import { fetchScales } from '../actions/scaleActions'
 
