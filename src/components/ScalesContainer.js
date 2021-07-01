@@ -1,6 +1,5 @@
 import React from 'react'
 import ScaleCard from './ScaleCard'
-// import Form from './Form'
 import { connect } from 'react-redux'
 import { fetchScales } from '../actions/scaleActions'
 
@@ -19,7 +18,7 @@ class ScalesContainer extends React.Component {
     render() {
     
         return(
-            <div>
+            <div className="basicStyling">
                 {this.props.loading ? <h1>Loading Scales...</h1> : this.renderScaleCards()} 
             </div>
         )
@@ -28,7 +27,9 @@ class ScalesContainer extends React.Component {
 }
 
 const mapStateToProps = (state) => {
-    return {scales: state.scales}
+    return { scales: state.scales,
+             loading: state.loading
+        }
 }
 
 const mapDispatchToProps = (dispatch) => {

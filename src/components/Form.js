@@ -1,4 +1,6 @@
 import React from 'react';
+import { connect } from 'react-redux'
+import {createScale} from '../actions/scaleActions'
 
 class Form extends React.Component {
 
@@ -16,12 +18,13 @@ class Form extends React.Component {
 
     handleSubmit = (event) => {
         event.preventDefault()
-        // this.props.addScale(this.state)
+        this.props.createScale(this.state)
         this.setState({
             name: "",
             notes: "",
             description: ""
         })
+        window.location.replace("http://localhost:3000/scales")
     }
 
     render() {
@@ -46,4 +49,4 @@ class Form extends React.Component {
     }
 }
 
-export default Form;
+export default connect(null, {createScale})(Form);
