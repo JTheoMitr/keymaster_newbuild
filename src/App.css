@@ -1,4 +1,6 @@
-
+.basicStyling {
+  text-align: center;
+}
 
 .navbar {
   text-align: center;
@@ -17,6 +19,10 @@
 
 .navButton:hover {
   width: 200px
+}
+
+input {
+  width: 30%
 }
 
 @keyframes App-logo-spin {
