@@ -12,7 +12,7 @@ import NavBar from './components/NavBar';
 function App() {
   return (
     <Router>
-      <div>
+      <div className="basicStyling">
         < NavBar />
         <br></br>
         <Route exact path="/scales" component={ScalesContainer} />
