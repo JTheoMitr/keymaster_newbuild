@@ -1,7 +1,9 @@
-export default function scaleReducer(state = {scales: []}, action) {
+export default function scaleReducer(state = { scales: [], loading: false }, action) {
     switch (action.type) {
         case 'GET_SCALES': 
-        return { scales: action.payload}
+            return { ...state, scales: action.payload, loading: false }
+        case 'LOADING':
+            return { ...state, loading: true }
         default:
             return state
     }

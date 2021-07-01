@@ -35,7 +35,7 @@ class Form extends React.Component {
                 <input onChange={this.handleChange} type="text" name="notes" placeholder="Notes (eg C-D-E-F-G-A)" value={this.state.notes}></input>
                 <br></br>
                 <br></br>
-                <input onChange={this.handleChange} type="text" name="description" value={this.state.description}></input>
+                <input onChange={this.handleChange} type="text" name="description" placeholder="Description" value={this.state.description}></input>
                 <br></br>
                 <br></br>
                 <input type="submit"></input>

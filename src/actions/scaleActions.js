@@ -8,6 +8,7 @@ export const getScales = (scales) => {
 
 export const fetchScales = () => {
     return (dispatch) => {
+        dispatch({type: 'LOADING'})
         fetch(url)
         .then(resp => resp.json())
         .then(data => {
