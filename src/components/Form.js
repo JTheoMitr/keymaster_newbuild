@@ -24,7 +24,7 @@ class Form extends React.Component {
             notes: "",
             description: ""
         })
-        window.location.replace("http://localhost:3000/scales")
+        this.props.history.push("/scales")
     }
 
     render() {
