@@ -1,13 +1,13 @@
 .basicStyling {
   text-align: center;
-  background-color: lightsteelblue
+  background-color: lightslategrey;
 }
 
 .navbar {
   text-align: center;
-  align-items: center;
   align-content: center;
-  background-color: grey; 
+  background-image: url('./images/klimakesLOGO.png');
+  background-size: cover;
 }
 
 .navButton {

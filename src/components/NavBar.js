@@ -12,8 +12,14 @@ const link = {
 const NavBar = () => {
   return (
 
+
+
     <div className='navbar'>
-        <div className='navButton'>
+
+        <br></br>
+
+
+    <div className='navButton'>
       <NavLink
         to="/scales"
         exact
@@ -50,6 +56,18 @@ const NavBar = () => {
         style={link}
       >New</NavLink>
       </div>
+
+      <br></br>
+
+      <div className='navButton'>
+      <NavLink
+        to="/resources"
+        exact
+        style={link}
+      >Resources</NavLink>
+      </div>
+
+      <br></br>
 
 
     </div>
