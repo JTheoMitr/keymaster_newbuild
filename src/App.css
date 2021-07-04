@@ -1,6 +1,7 @@
 .basicStyling {
   text-align: center;
-  background-color: lightslategrey;
+  background-image: url('./images/joao-barbosa-G0EOSG4ScWM-unsplash.jpg');
+  background-size: cover;
 }
 
 .navbar {

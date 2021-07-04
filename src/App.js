@@ -15,7 +15,7 @@ function App() {
     <Router>
       <div className="basicStyling">
         < NavBar />
-        <br></br>
+        
         <Route exact path="/scales" component={ScalesContainer} />
         <Route exact path="/about" component={About} />
         <Route exact path="/contact" component={Contact} />

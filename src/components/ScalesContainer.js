@@ -45,7 +45,7 @@ class ScalesContainer extends React.Component {
     render() {
     
         return(
-            <div className="basicStyling">
+            <div>
                 {this.props.loading ? <h1>Loading Scales...</h1> : this.renderScaleCards()} 
                 {/* {this.props.loading ? <h1>Loading Scales...</h1> : this.relativeScales()} */}
             </div>
