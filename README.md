@@ -1,70 +1,35 @@
-# Getting Started with Create React App
+'Klimakes' React Portfolio Project
+This application acts as the front end portion of my React Portfolio Project.
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+Usage
+To begin, you will first need to open up the backend repository here: https://github.com/JTheoMitr/klimakes-backend
 
-## Available Scripts
+To seed some preliminary information into the database, enter the following into your terminal:
 
-In the project directory, you can run:
+rails db:seed
 
-### `yarn start`
+Run the rails server by entering the following in your terminal:
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in the browser.
+rails s -p 3001
 
-The page will reload if you make edits.\
-You will also see any lint errors in the console.
+once the server is running, open this repo, and enter the following in your terminal:
 
-### `yarn test`
+yarn install
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+followed by:
 
-### `yarn build`
+yarn start
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+From there you will use the app in your default browser.
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+Once finished - remember to exit both the front end and the rails server in your terminal (ctrl + c) before closing out your development environment(s)!
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+Contribution
+All collaborations are welcome! I plan to continue my work on this project in order to add features, and am always open to new ideas. You can navigate to the following repository on GitHub for pull requests and bug reports:
 
-### `yarn eject`
+https://github.com/JTheoMitr/klimakes-frontend
 
-**Note: this is a one-way operation. Once you `eject`, you can’t go back!**
+License
+This application is open source and available under terms designated by the MIT License:
 
-If you aren’t satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
-
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you’re on your own.
-
-You don’t have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn’t feel obligated to use this feature. However we understand that this tool wouldn’t be useful if you couldn’t customize it when you are ready for it.
-
-## Learn More
-
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
-
-To learn React, check out the [React documentation](https://reactjs.org/).
-
-### Code Splitting
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
-
-### Analyzing the Bundle Size
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
-
-### Making a Progressive Web App
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
-
-### Advanced Configuration
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
-
-### Deployment
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
-
-### `yarn build` fails to minify
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+https://opensource.org/licenses/MIT

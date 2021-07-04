@@ -29,7 +29,8 @@ class Form extends React.Component {
 
     render() {
         return(
-            <div className="basicStyling">
+            <div >
+                <h2>New Scale</h2>
                 <form onSubmit={this.handleSubmit}>
 
                 <input onChange={this.handleChange} type="text" name="name" placeholder="Name" value={this.state.name}></input>
