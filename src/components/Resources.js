@@ -2,7 +2,7 @@ import React from 'react';
 
 const Resources = () => {
   return (
-    <div>
+    <div className="card">
       <h1>Other Available Resources</h1>
 
       <h2><a href='https://www.guitargrimoire.com/'>Guitar Grimoire</a></h2>

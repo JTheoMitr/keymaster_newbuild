@@ -29,7 +29,7 @@ class Form extends React.Component {
 
     render() {
         return(
-            <div >
+            <div className="card">
                 <h2>New Scale</h2>
                 <form onSubmit={this.handleSubmit}>
 
@@ -43,7 +43,8 @@ class Form extends React.Component {
                 <br></br>
                 <br></br>
                 <input type="submit"></input>
-
+                <br></br>
+                <br></br>
                 </form>
             </div>
         )
