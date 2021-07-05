@@ -11,14 +11,6 @@ class ScalesContainer extends React.Component {
         
     }
 
-    // relativeScales= () => {
-    //     const newScales = this.props.scales.filter(scale => scale.notes.includes("F"))
-    //     return newScales.map(ns => {
-    //         return <p>{ns.name},</p>
-    //     }
-    //     )
-    // }
-
     
 
 
@@ -28,7 +20,7 @@ class ScalesContainer extends React.Component {
         return this.props.scales.map(scale => 
 
             
-
+                <div>
                 <ScaleCard 
                 id={scale.id} 
                 key={scale.id} 
@@ -37,7 +29,11 @@ class ScalesContainer extends React.Component {
                 description={scale.description} 
                 allScales={this.props.scales}
 
-                />)
+                />
+                <div className="parallax"></div>
+                </div>)
+
+                
 
                 
     }
@@ -46,6 +42,8 @@ class ScalesContainer extends React.Component {
     
         return(
             <div>
+                <h1>All Scales:</h1>
+                <div className='parallax'></div>
                 {this.props.loading ? <h1>Loading Scales...</h1> : this.renderScaleCards()} 
                 {/* {this.props.loading ? <h1>Loading Scales...</h1> : this.relativeScales()} */}
             </div>

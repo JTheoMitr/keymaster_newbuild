@@ -11,5 +11,4 @@ export default function scaleReducer(state = { scales: [], loading: false }, act
     }
 }
 
-        // case 'ADD_SCALE': 
-        // return { ...state, scales: [...state.scales, action.payload] }
+       

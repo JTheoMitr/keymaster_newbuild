@@ -7,7 +7,7 @@ const ScaleCard = ({allScales, name, id, description, notes}) => {
         const relatives = allScales.filter(scale => scale.notes.split('-').every(isMatch) && scale.notes[0] !== notes[0])
     
     return(
-        <div>
+        <div className="card">
             <h1>{name}</h1>
             <p>{description}</p>
             <p>{notes}</p>

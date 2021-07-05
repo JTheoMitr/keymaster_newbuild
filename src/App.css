@@ -1,11 +1,17 @@
 .basicStyling {
   text-align: center;
-  background-image: url('./images/joao-barbosa-G0EOSG4ScWM-unsplash.jpg');
-  background-position: center;
-  background-repeat: no-repeat;
-  background-size: cover;
-  min-height: 12in;
+  background-image: url('./images/rustic-woodgrain-background.jpg');
   height: 100%;
+  margin: auto;
+}
+
+.card {
+  text-align: center;
+  display: inline-table;
+  background-color: lightsteelblue;
+  opacity: .75;
+  width: 80%;
+  margin: 10px;
 }
 
 .fullShot {
@@ -28,12 +34,29 @@
   background-color: darkolivegreen;
   width: 100px;
   text-align: center ;
-  transition: width 2s;
+  transition: width 2s, background-color 1s;
   /* display: inline-block; */
 }
 
 .navButton:hover {
-  width: 200px
+  width: 200px;
+  background-color: skyblue;
+}
+
+.parallax {
+  /* The image used */
+  background-image: url('./images/James-Udall-Utah-Notch-Lake-Uintas-Sunset.jpg');
+
+  /* Set a specific height */
+  min-height: 200px; 
+  
+
+
+  /* Create the parallax scrolling effect */
+  background-attachment: fixed;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: contain;
 }
 
 input {
