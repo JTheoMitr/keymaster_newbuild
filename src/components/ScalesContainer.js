@@ -11,12 +11,29 @@ class ScalesContainer extends React.Component {
         
     }
 
+    alphabetizeCards = () => {
+        this.props.scales.sort(function(a,b) {
+            let nameA = a.name.toUpperCase();
+            let nameB = b.name.toUpperCase();
+
+            if (nameA < nameB) {
+                return -1
+            }
+
+            if (nameA > nameB) {
+                return 1
+            }
+
+            return 0
+        })
+    }
+
     
 
 
     renderScaleCards = () => {
 
-
+        this.alphabetizeCards()
         return this.props.scales.map(scale => 
 
             
@@ -42,8 +59,8 @@ class ScalesContainer extends React.Component {
     
         return(
             <div>
-                <h1>All Scales:</h1>
-                <div className='parallax'></div>
+                <div className="card"><h1>All Scales:</h1></div>
+                {/* <div className='parallax'></div> */}
                 {this.props.loading ? <h1>Loading Scales...</h1> : this.renderScaleCards()} 
                 {/* {this.props.loading ? <h1>Loading Scales...</h1> : this.relativeScales()} */}
             </div>

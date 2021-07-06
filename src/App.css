@@ -10,7 +10,7 @@
   display: inline-table;
   background-color: lightsteelblue;
   opacity: .75;
-  width: 80%;
+  width: 70%;
   margin: 10px;
 }
 
@@ -48,7 +48,7 @@
   background-image: url('./images/James-Udall-Utah-Notch-Lake-Uintas-Sunset.jpg');
 
   /* Set a specific height */
-  min-height: 200px; 
+  min-height: 100px; 
   
 
 
