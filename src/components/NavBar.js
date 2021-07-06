@@ -17,6 +17,7 @@ const NavBar = () => {
     <div className='navbar'>
 
         <br></br>
+        <br></br>
 
 
     <div className='navButton'>
@@ -68,7 +69,7 @@ const NavBar = () => {
       </div>
 
       <br></br>
-
+      <br></br>
 
     </div>
   );

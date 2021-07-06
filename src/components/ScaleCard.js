@@ -6,7 +6,7 @@ const ScaleCard = ({allScales, name, id, description, notes}) => {
 
         const relatives = allScales.filter(scale => scale.notes.split('-').every(isMatch) && scale.notes[0] !== notes[0])
 
-        const parallels = allScales.filter(scale => scale.notes.split('-')[0] === notes.split('-')[0] && scale.notes.split('-')[2] !== notes.split('-')[2] && scale.notes.split('-')[5] !== notes.split('-')[5] && scale.notes.split('-')[6] !== notes.split('-')[6])
+        const parallels = allScales.filter(scale => scale.notes.split('-')[0] === notes.split('-')[0] && scale.notes.split('-')[0] === notes.split('-')[0] && scale.notes.split('-')[2] !== notes.split('-')[2] && scale.notes.split('-')[5] !== notes.split('-')[5] && scale.notes.split('-')[6] !== notes.split('-')[6])
     
     return(
         <div className="card">

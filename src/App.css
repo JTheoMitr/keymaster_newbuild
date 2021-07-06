@@ -1,6 +1,6 @@
 .basicStyling {
   text-align: center;
-  background-image: url('./images/rustic-woodgrain-background.jpg');
+  background-color: lightslategrey;
   height: 100%;
   margin: auto;
 }
@@ -9,6 +9,7 @@
   text-align: center;
   display: inline-table;
   background-color: lightsteelblue;
+  border-radius: 20px;
   opacity: .75;
   width: 75%;
   margin: 10px;
@@ -26,12 +27,14 @@
 .navbar {
   text-align: center;
   align-content: center;
-  background-image: url('./images/klimakesLOGO.png');
+  background-image: url('./images/klimakes_neon.png');
   background-size: cover;
+  background-position-y: 52%;
+  
 }
 
 .navButton {
-  background-color: darkolivegreen;
+  background-color: darkred;
   width: 100px;
   text-align: center ;
   transition: width 2s, background-color 1s;
@@ -45,7 +48,7 @@
 
 .parallax {
   /* The image used */
-  background-image: url('./images/James-Udall-Utah-Notch-Lake-Uintas-Sunset.jpg');
+  background-image: url('./images/FreeVector-Music-Notes-Vector-Background.jpg');
 
   /* Set a specific height */
   min-height: 100px; 
