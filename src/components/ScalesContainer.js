@@ -28,6 +28,12 @@ class ScalesContainer extends React.Component {
         })
     }
 
+    // alphabetizeCards = () => {
+    //     this.props.scales.sort(function(a, b) {
+    //         return a.name - b.name
+    //     })
+    // }
+
     
 
 
