@@ -1,6 +1,6 @@
 .basicStyling {
   text-align: center;
-  background-color: lightslategrey;
+  background-color: black;
   height: 100%;
   margin: auto;
 }
@@ -30,6 +30,7 @@
   background-image: url('./images/klimakes_neon.png');
   background-size: cover;
   background-position-y: 52%;
+  margin: 10px;
   
 }
 
@@ -69,6 +70,10 @@ input {
 a {
   text-decoration: none;
   font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+
+body {
+  background-color: black;
 }
 
 @keyframes App-logo-spin {
