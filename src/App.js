@@ -16,11 +16,15 @@ function App() {
       <div className="basicStyling">
         < NavBar />
         
-        <Route exact path="/scales" component={ScalesContainer} />
+        
+        <Route exact path="/scales" component={(routeInfo) => <ScalesContainer routeData={routeInfo} />} />
         <Route exact path="/about" component={About} />
         <Route exact path="/contact" component={Contact} />
         <Route exact path="/scales/new" component={Form} />
         <Route exact path="/resources" component={Resources} />
+        <Route path = "/scales" render={() => <div style={{color:"white"}}>404</div>} />
+
+        
       </div>
     </Router>
   );

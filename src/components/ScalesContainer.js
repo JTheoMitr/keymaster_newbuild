@@ -62,7 +62,7 @@ class ScalesContainer extends React.Component {
     }
 
     render() {
-    
+        console.log(this.props.routeData)
         return(
             <div>
                 <div className="card"><h1>All Scales:</h1></div>
