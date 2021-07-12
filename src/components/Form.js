@@ -24,10 +24,12 @@ class Form extends React.Component {
             notes: "",
             description: ""
         })
-        this.props.history.push("/scales")
+       
+        this.props.routeData.history.push('/scales')
     }
 
     render() {
+        console.log(this.props)
         return(
             <div className="card">
                 <h2>New Scale</h2>

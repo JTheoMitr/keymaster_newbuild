@@ -73,9 +73,7 @@ class ScalesContainer extends React.Component {
                     {this.props.loading ? <h1>Loading Scales...</h1> : this.renderScaleCards()} 
                     </Route>
 
-                    <Route exact path='/scales/new'>
-                        <Form />
-                    </Route>
+                    <Route exact path="/scales/new" component={(routeInfo) => <Form routeData={routeInfo} />} />
 
                     <Route path = "/scales/:id" component={(routeData) => {
                         const id = parseInt(routeData.match.params.id)

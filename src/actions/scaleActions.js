@@ -36,7 +36,8 @@ export const createScale = (scale) => {
         fetch(url, configObj)
         .then(resp => resp.json())
         .then(json => {
-            const newScale = json.data
+            const newScale = json
+            debugger
             dispatch(addScale(newScale))
         })
     }
