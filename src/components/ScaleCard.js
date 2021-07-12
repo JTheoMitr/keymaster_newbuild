@@ -1,10 +1,5 @@
 import React from 'react'
-// import {
-//     BrowserRouter as Router,
-//     Route,
-//     Switch,
-//     Link
-//   } from 'react-router-dom';
+import { Link } from 'react-router-dom';
 
 const ScaleCard = ({allScales, name, id, description, notes}) => {
 
@@ -20,8 +15,10 @@ const ScaleCard = ({allScales, name, id, description, notes}) => {
             <p>{description}</p>
             <h3>{notes}</h3>
             
-            <p>Relative Scales: {relatives.map(rel => rel.name)}</p>
+            <p>Relative Scales: {relatives.map(rel => <Link key={rel.id} to={`/scales/${rel.id}`}>{rel.name}</Link>)}</p>
             <p>Parallel Scales: {parallels.map(par => par.name)}</p>
+
+            
         </div>
     )
 }
