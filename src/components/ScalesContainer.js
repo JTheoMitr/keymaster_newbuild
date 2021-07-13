@@ -79,7 +79,7 @@ class ScalesContainer extends React.Component {
                         const id = parseInt(routeData.match.params.id)
                         const s = this.props.scales.find(scale => scale.id === id)
                         // console.log(routeData)
-                        return !!s ? <ScaleShow scale={s} /> : <div>404</div>
+                        return !!s ? <ScaleShow scale={s} /> : <div style={{color: "white"}}>404</div>
                     }
                     } />
                 </Switch>

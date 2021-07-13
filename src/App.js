@@ -24,15 +24,15 @@ function App() {
         
           <Route path="/scales" component={(routeInfo) => <ScalesContainer routeData={routeInfo} />} />
 
-          <Route exact path="/about">
+          <Route path="/about">
               <About />
             </Route>
 
-          <Route exact path="/contact">
+          <Route path="/contact">
             <Contact />
           </Route>
 
-          <Route exact path="/resources">
+          <Route path="/resources">
             <Resources />
           </Route>
 
