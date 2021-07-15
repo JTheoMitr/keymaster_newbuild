@@ -37,7 +37,6 @@ export const createScale = (scale) => {
         .then(resp => resp.json())
         .then(json => {
             const newScale = json
-            debugger
             dispatch(addScale(newScale))
         })
     }

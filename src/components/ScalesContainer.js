@@ -8,8 +8,10 @@ import {
     Switch
   } from 'react-router-dom';
 import Form from './Form'
+import SearchBar from './SearchBar'
 
 class ScalesContainer extends React.Component {
+
 
     componentDidMount() {
         
@@ -61,6 +63,33 @@ class ScalesContainer extends React.Component {
                 
     }
 
+    // searchScales = (search) => {
+
+        
+    //     console.log(search)
+    //     if (search != undefined && search != "") {
+            
+    //         const searchedScales = this.props.scales.filter(scale => scale.name.includes("D"))
+    //         return searchedScales.map(scale => 
+
+            
+    //             <div key={scale.id * 100} >
+    //             <ScaleCard 
+    //             id={scale.id} 
+    //             key={scale.id} 
+    //             name={scale.name} 
+    //             notes={scale.notes} 
+    //             description={scale.description} 
+    //             allScales={this.props.scales}
+
+    //             />
+    //             <div key={scale.id * 10} className="parallax"></div>
+    //             </div>)
+    //     } else if (search == undefined || search == "") {
+    //         return this.renderScaleCards()
+    //     }
+    // }
+
     render() {
         // console.log(this.props)
         return(
@@ -68,9 +97,10 @@ class ScalesContainer extends React.Component {
             <div>
                 <Switch>
                     <Route exact path='/scales'>
-                    <div className="card"><h1>All Scales:</h1></div>
+                        <SearchBar allScales={this.props.scales}/>
                     
-                    {this.props.loading ? <h1>Loading Scales...</h1> : this.renderScaleCards()} 
+                    
+                    {this.props.loading ? <h1>Loading Scales...</h1> : this.alphabetizeCards()} 
                     </Route>
 
                     <Route exact path="/scales/new" component={(routeInfo) => <Form routeData={routeInfo} />} />
