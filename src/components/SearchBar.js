@@ -15,7 +15,7 @@ class SearchBar extends React.Component {
 
     searchScales = () => {
         console.log(this.state.name.toUpperCase())
-            const searchedScales = this.props.allScales.filter(scale => scale.name.includes(this.state.name.toUpperCase()))
+            const searchedScales = this.props.allScales.filter(scale => scale.name.charAt(0).toUpperCase().includes(this.state.name.charAt(0).toUpperCase()) && scale.name.charAt(1).toUpperCase().includes(this.state.name.charAt(1).toUpperCase()) && scale.name.charAt(3).toUpperCase().includes(this.state.name.charAt(3).toUpperCase()) && scale.name.charAt(4).toUpperCase().includes(this.state.name.charAt(4).toUpperCase()))
             return searchedScales.map(scale => 
 
             

@@ -39,38 +39,10 @@ class ScalesContainer extends React.Component {
     
 
 
-    renderScaleCards = () => {
+    // renderScaleCards = () => {
 
-        this.alphabetizeCards()
-        return this.props.scales.map(scale => 
-
-            
-                <div key={scale.id * 100} >
-                <ScaleCard 
-                id={scale.id} 
-                key={scale.id} 
-                name={scale.name} 
-                notes={scale.notes} 
-                description={scale.description} 
-                allScales={this.props.scales}
-
-                />
-                <div key={scale.id * 10} className="parallax"></div>
-                </div>)
-
-                
-
-                
-    }
-
-    // searchScales = (search) => {
-
-        
-    //     console.log(search)
-    //     if (search != undefined && search != "") {
-            
-    //         const searchedScales = this.props.scales.filter(scale => scale.name.includes("D"))
-    //         return searchedScales.map(scale => 
+    //     this.alphabetizeCards()
+    //     return this.props.scales.map(scale => 
 
             
     //             <div key={scale.id * 100} >
@@ -85,10 +57,13 @@ class ScalesContainer extends React.Component {
     //             />
     //             <div key={scale.id * 10} className="parallax"></div>
     //             </div>)
-    //     } else if (search == undefined || search == "") {
-    //         return this.renderScaleCards()
-    //     }
+
+                
+
+                
     // }
+
+    
 
     render() {
         // console.log(this.props)
