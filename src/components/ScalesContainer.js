@@ -1,5 +1,4 @@
 import React from 'react'
-import ScaleCard from './ScaleCard'
 import ScaleShow from './ScaleShow'
 import { connect } from 'react-redux'
 import { fetchScales } from '../actions/scaleActions'
