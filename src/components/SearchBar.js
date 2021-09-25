@@ -13,9 +13,33 @@ class SearchBar extends React.Component {
         })
     }
 
+    
+
     searchScales = () => {
-        console.log(this.state.name.toUpperCase())
-            const searchedScales = this.props.allScales.filter(scale => scale.notes.includes(this.state.name.toUpperCase()) )
+        console.log(this.state.name.toUpperCase().split('-')[1])
+         
+            const searchedScales = 
+            
+            this.props.allScales.filter(scale => 
+
+                !!(this.state.name.toUpperCase().split('-')[2]) ? 
+
+                scale.notes.split('-').includes(this.state.name.toUpperCase().split('-')[2]) && 
+                scale.notes.split('-').includes(this.state.name.toUpperCase().split('-')[1]) && 
+                scale.notes.split('-').includes(this.state.name.toUpperCase().split('-')[0]) :
+
+
+                !!(this.state.name.toUpperCase().split('-')[1]) ? 
+
+                scale.notes.split('-').includes(this.state.name.toUpperCase().split('-')[0]) && 
+                scale.notes.split('-').includes(this.state.name.toUpperCase().split('-')[1]) :
+
+                !!(this.state.name.toUpperCase().split('-')[0]) ? 
+                
+                scale.notes.split('-').includes(this.state.name.toUpperCase().split('-')[0]) :
+                !!scale.name)
+
+
             return searchedScales.map(scale => 
 
             
