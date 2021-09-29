@@ -27,64 +27,64 @@ class SearchBar extends React.Component {
 
                 !!(this.state.name.toUpperCase().split('-')[7]) ? 
 
-                scale.notes.split('-').includes(this.state.name.toUpperCase().split('-')[7]) && 
-                scale.notes.split('-').includes(this.state.name.toUpperCase().split('-')[6]) && 
-                scale.notes.split('-').includes(this.state.name.toUpperCase().split('-')[5]) && 
-                scale.notes.split('-').includes(this.state.name.toUpperCase().split('-')[4]) && 
-                scale.notes.split('-').includes(this.state.name.toUpperCase().split('-')[3]) && 
-                scale.notes.split('-').includes(this.state.name.toUpperCase().split('-')[2]) && 
-                scale.notes.split('-').includes(this.state.name.toUpperCase().split('-')[1]) && 
-                scale.notes.split('-').includes(this.state.name.toUpperCase().split('-')[0]) :
+                scale.notes.toUpperCase().split('-').includes(this.state.name.toUpperCase().split('-')[7]) && 
+                scale.notes.toUpperCase().split('-').includes(this.state.name.toUpperCase().split('-')[6]) && 
+                scale.notes.toUpperCase().split('-').includes(this.state.name.toUpperCase().split('-')[5]) && 
+                scale.notes.toUpperCase().split('-').includes(this.state.name.toUpperCase().split('-')[4]) && 
+                scale.notes.toUpperCase().split('-').includes(this.state.name.toUpperCase().split('-')[3]) && 
+                scale.notes.toUpperCase().split('-').includes(this.state.name.toUpperCase().split('-')[2]) && 
+                scale.notes.toUpperCase().split('-').includes(this.state.name.toUpperCase().split('-')[1]) && 
+                scale.notes.toUpperCase().split('-').includes(this.state.name.toUpperCase().split('-')[0]) :
 
                 !!(this.state.name.toUpperCase().split('-')[6]) ? 
 
-                scale.notes.split('-').includes(this.state.name.toUpperCase().split('-')[6]) && 
-                scale.notes.split('-').includes(this.state.name.toUpperCase().split('-')[5]) && 
-                scale.notes.split('-').includes(this.state.name.toUpperCase().split('-')[4]) && 
-                scale.notes.split('-').includes(this.state.name.toUpperCase().split('-')[3]) && 
-                scale.notes.split('-').includes(this.state.name.toUpperCase().split('-')[2]) && 
-                scale.notes.split('-').includes(this.state.name.toUpperCase().split('-')[1]) && 
-                scale.notes.split('-').includes(this.state.name.toUpperCase().split('-')[0]) :
+                scale.notes.toUpperCase().split('-').includes(this.state.name.toUpperCase().split('-')[6]) && 
+                scale.notes.toUpperCase().split('-').includes(this.state.name.toUpperCase().split('-')[5]) && 
+                scale.notes.toUpperCase().split('-').includes(this.state.name.toUpperCase().split('-')[4]) && 
+                scale.notes.toUpperCase().split('-').includes(this.state.name.toUpperCase().split('-')[3]) && 
+                scale.notes.toUpperCase().split('-').includes(this.state.name.toUpperCase().split('-')[2]) && 
+                scale.notes.toUpperCase().split('-').includes(this.state.name.toUpperCase().split('-')[1]) && 
+                scale.notes.toUpperCase().split('-').includes(this.state.name.toUpperCase().split('-')[0]) :
 
                 !!(this.state.name.toUpperCase().split('-')[5]) ? 
 
-                scale.notes.split('-').includes(this.state.name.toUpperCase().split('-')[5]) && 
-                scale.notes.split('-').includes(this.state.name.toUpperCase().split('-')[4]) && 
-                scale.notes.split('-').includes(this.state.name.toUpperCase().split('-')[3]) && 
-                scale.notes.split('-').includes(this.state.name.toUpperCase().split('-')[2]) && 
-                scale.notes.split('-').includes(this.state.name.toUpperCase().split('-')[1]) && 
-                scale.notes.split('-').includes(this.state.name.toUpperCase().split('-')[0]) :
+                scale.notes.toUpperCase().split('-').includes(this.state.name.toUpperCase().split('-')[5]) && 
+                scale.notes.toUpperCase().split('-').includes(this.state.name.toUpperCase().split('-')[4]) && 
+                scale.notes.toUpperCase().split('-').includes(this.state.name.toUpperCase().split('-')[3]) && 
+                scale.notes.toUpperCase().split('-').includes(this.state.name.toUpperCase().split('-')[2]) && 
+                scale.notes.toUpperCase().split('-').includes(this.state.name.toUpperCase().split('-')[1]) && 
+                scale.notes.toUpperCase().split('-').includes(this.state.name.toUpperCase().split('-')[0]) :
 
                 !!(this.state.name.toUpperCase().split('-')[4]) ? 
 
-                scale.notes.split('-').includes(this.state.name.toUpperCase().split('-')[4]) && 
-                scale.notes.split('-').includes(this.state.name.toUpperCase().split('-')[3]) && 
-                scale.notes.split('-').includes(this.state.name.toUpperCase().split('-')[2]) && 
-                scale.notes.split('-').includes(this.state.name.toUpperCase().split('-')[1]) && 
-                scale.notes.split('-').includes(this.state.name.toUpperCase().split('-')[0]) :
+                scale.notes.toUpperCase().split('-').includes(this.state.name.toUpperCase().split('-')[4]) && 
+                scale.notes.toUpperCase().split('-').includes(this.state.name.toUpperCase().split('-')[3]) && 
+                scale.notes.toUpperCase().split('-').includes(this.state.name.toUpperCase().split('-')[2]) && 
+                scale.notes.toUpperCase().split('-').includes(this.state.name.toUpperCase().split('-')[1]) && 
+                scale.notes.toUpperCase().split('-').includes(this.state.name.toUpperCase().split('-')[0]) :
 
                 !!(this.state.name.toUpperCase().split('-')[3]) ? 
 
-                scale.notes.split('-').includes(this.state.name.toUpperCase().split('-')[3]) && 
-                scale.notes.split('-').includes(this.state.name.toUpperCase().split('-')[2]) && 
-                scale.notes.split('-').includes(this.state.name.toUpperCase().split('-')[1]) && 
-                scale.notes.split('-').includes(this.state.name.toUpperCase().split('-')[0]) :
+                scale.notes.toUpperCase().split('-').includes(this.state.name.toUpperCase().split('-')[3]) && 
+                scale.notes.toUpperCase().split('-').includes(this.state.name.toUpperCase().split('-')[2]) && 
+                scale.notes.toUpperCase().split('-').includes(this.state.name.toUpperCase().split('-')[1]) && 
+                scale.notes.toUpperCase().split('-').includes(this.state.name.toUpperCase().split('-')[0]) :
 
                 !!(this.state.name.toUpperCase().split('-')[2]) ? 
 
-                scale.notes.split('-').includes(this.state.name.toUpperCase().split('-')[2]) && 
-                scale.notes.split('-').includes(this.state.name.toUpperCase().split('-')[1]) && 
-                scale.notes.split('-').includes(this.state.name.toUpperCase().split('-')[0]) :
+                scale.notes.toUpperCase().split('-').includes(this.state.name.toUpperCase().split('-')[2]) && 
+                scale.notes.toUpperCase().split('-').includes(this.state.name.toUpperCase().split('-')[1]) && 
+                scale.notes.toUpperCase().split('-').includes(this.state.name.toUpperCase().split('-')[0]) :
 
 
                 !!(this.state.name.toUpperCase().split('-')[1]) ? 
 
-                scale.notes.split('-').includes(this.state.name.toUpperCase().split('-')[0]) && 
-                scale.notes.split('-').includes(this.state.name.toUpperCase().split('-')[1]) :
+                scale.notes.toUpperCase().split('-').includes(this.state.name.toUpperCase().split('-')[0]) && 
+                scale.notes.toUpperCase().split('-').includes(this.state.name.toUpperCase().split('-')[1]) :
 
                 !!(this.state.name.toUpperCase().split('-')[0]) ? 
                 
-                scale.notes.split('-').includes(this.state.name.toUpperCase().split('-')[0]) :
+                scale.notes.toUpperCase().split('-').includes(this.state.name.toUpperCase().split('-')[0]) :
 
                 !!scale.name)
 
