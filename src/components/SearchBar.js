@@ -21,76 +21,17 @@ class SearchBar extends React.Component {
          
             const searchedScales = 
 
-            // check for number of characters in search params, otherwise display all scales
+            // check for value(s) in search params, otherwise display all scales
             
             this.props.allScales.filter(scale => 
 
                 this.state.name.length > 0 ?
 
-                this.state.name.toUpperCase().split('-').every(elem => scale.notes.toUpperCase().split('-').includes(elem)) :
+                    this.state.name.toUpperCase().split('-').every(elem =>
+                        
+                        (scale.notes.toUpperCase().split('-').includes(elem)) || elem === "" ) :
 
-                // !!(this.state.name.toUpperCase().split('-')[7]) ? 
-
-                // scale.notes.toUpperCase().split('-').includes(this.state.name.toUpperCase().split('-')[7]) && 
-                // scale.notes.toUpperCase().split('-').includes(this.state.name.toUpperCase().split('-')[6]) && 
-                // scale.notes.toUpperCase().split('-').includes(this.state.name.toUpperCase().split('-')[5]) && 
-                // scale.notes.toUpperCase().split('-').includes(this.state.name.toUpperCase().split('-')[4]) && 
-                // scale.notes.toUpperCase().split('-').includes(this.state.name.toUpperCase().split('-')[3]) && 
-                // scale.notes.toUpperCase().split('-').includes(this.state.name.toUpperCase().split('-')[2]) && 
-                // scale.notes.toUpperCase().split('-').includes(this.state.name.toUpperCase().split('-')[1]) && 
-                // scale.notes.toUpperCase().split('-').includes(this.state.name.toUpperCase().split('-')[0]) :
-
-                // !!(this.state.name.toUpperCase().split('-')[6]) ? 
-
-                // scale.notes.toUpperCase().split('-').includes(this.state.name.toUpperCase().split('-')[6]) && 
-                // scale.notes.toUpperCase().split('-').includes(this.state.name.toUpperCase().split('-')[5]) && 
-                // scale.notes.toUpperCase().split('-').includes(this.state.name.toUpperCase().split('-')[4]) && 
-                // scale.notes.toUpperCase().split('-').includes(this.state.name.toUpperCase().split('-')[3]) && 
-                // scale.notes.toUpperCase().split('-').includes(this.state.name.toUpperCase().split('-')[2]) && 
-                // scale.notes.toUpperCase().split('-').includes(this.state.name.toUpperCase().split('-')[1]) && 
-                // scale.notes.toUpperCase().split('-').includes(this.state.name.toUpperCase().split('-')[0]) :
-
-                // !!(this.state.name.toUpperCase().split('-')[5]) ? 
-
-                // scale.notes.toUpperCase().split('-').includes(this.state.name.toUpperCase().split('-')[5]) && 
-                // scale.notes.toUpperCase().split('-').includes(this.state.name.toUpperCase().split('-')[4]) && 
-                // scale.notes.toUpperCase().split('-').includes(this.state.name.toUpperCase().split('-')[3]) && 
-                // scale.notes.toUpperCase().split('-').includes(this.state.name.toUpperCase().split('-')[2]) && 
-                // scale.notes.toUpperCase().split('-').includes(this.state.name.toUpperCase().split('-')[1]) && 
-                // scale.notes.toUpperCase().split('-').includes(this.state.name.toUpperCase().split('-')[0]) :
-
-                // !!(this.state.name.toUpperCase().split('-')[4]) ? 
-
-                // scale.notes.toUpperCase().split('-').includes(this.state.name.toUpperCase().split('-')[4]) && 
-                // scale.notes.toUpperCase().split('-').includes(this.state.name.toUpperCase().split('-')[3]) && 
-                // scale.notes.toUpperCase().split('-').includes(this.state.name.toUpperCase().split('-')[2]) && 
-                // scale.notes.toUpperCase().split('-').includes(this.state.name.toUpperCase().split('-')[1]) && 
-                // scale.notes.toUpperCase().split('-').includes(this.state.name.toUpperCase().split('-')[0]) :
-
-                // !!(this.state.name.toUpperCase().split('-')[3]) ? 
-
-                // scale.notes.toUpperCase().split('-').includes(this.state.name.toUpperCase().split('-')[3]) && 
-                // scale.notes.toUpperCase().split('-').includes(this.state.name.toUpperCase().split('-')[2]) && 
-                // scale.notes.toUpperCase().split('-').includes(this.state.name.toUpperCase().split('-')[1]) && 
-                // scale.notes.toUpperCase().split('-').includes(this.state.name.toUpperCase().split('-')[0]) :
-
-                // !!(this.state.name.toUpperCase().split('-')[2]) ? 
-
-                // scale.notes.toUpperCase().split('-').includes(this.state.name.toUpperCase().split('-')[2]) && 
-                // scale.notes.toUpperCase().split('-').includes(this.state.name.toUpperCase().split('-')[1]) && 
-                // scale.notes.toUpperCase().split('-').includes(this.state.name.toUpperCase().split('-')[0]) :
-
-
-                // !!(this.state.name.toUpperCase().split('-')[1]) ? 
-
-                // scale.notes.toUpperCase().split('-').includes(this.state.name.toUpperCase().split('-')[0]) && 
-                // scale.notes.toUpperCase().split('-').includes(this.state.name.toUpperCase().split('-')[1]) :
-
-                // !!(this.state.name.toUpperCase().split('-')[0]) ? 
-                
-                // scale.notes.toUpperCase().split('-').includes(this.state.name.toUpperCase().split('-')[0]) :
-
-                !!scale.name)
+                    !!scale.name)
 
 
             return searchedScales.map(scale => 
@@ -113,7 +54,7 @@ class SearchBar extends React.Component {
     render() {
         return(
             <div>
-                <input onChange={this.handleChange} type="text" name="name" placeholder="Search By Scale Name" value={this.state.name}></input>
+                <input onChange={this.handleChange} type="text" name="name" placeholder="Search Notes in Dash Format (A-B-C#-D etc)" value={this.state.name}></input>
                 {this.searchScales()}
                 
             </div>
