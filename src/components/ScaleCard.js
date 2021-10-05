@@ -17,6 +17,8 @@ const ScaleCard = ({allScales, name, id, description, notes}) => {
             
             <p>Relative Scales: {relatives.map(rel => <Link key={rel.id} to={`/scales/${rel.id}`}>{rel.name}</Link>)}</p>
             <p>Parallel Scales: {parallels.map(par => par.name)}</p>
+            {/* <div><Link to="www.youtube.com">TUBE</Link></div>
+            <a href="https://www.youtube.com/" target="_blank" rel="noreferrer">tube</a> */}
 
             
         </div>
