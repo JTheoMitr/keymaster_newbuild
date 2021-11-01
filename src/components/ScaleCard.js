@@ -28,6 +28,7 @@ const ScaleCard = ({allScales, name, id, description, notes}) => {
             }
 
             { // Confirm scale type and display link to examples
+            
                 (name.includes('Harmonic Major'))
                 ? <p><a href='https://musictales.club/article/9-beatles-songs-combine-harmonic-major-ionian-mode' target="_blank" rel="noreferrer">Songs in Harmonic Major</a></p>
                 : (name.includes('Harmonic Minor'))
@@ -43,8 +44,6 @@ const ScaleCard = ({allScales, name, id, description, notes}) => {
                 : <p></p>
             }
             
-            {/* <div><Link to="www.youtube.com">TUBE</Link></div>
-            <a href="https://www.youtube.com/" target="_blank" rel="noreferrer">tube</a> */}
 
             
         </div>

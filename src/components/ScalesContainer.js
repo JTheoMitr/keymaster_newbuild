@@ -37,33 +37,6 @@ class ScalesContainer extends React.Component {
 
     
 
-
-    // renderScaleCards = () => {
-
-    //     this.alphabetizeCards()
-    //     return this.props.scales.map(scale => 
-
-            
-    //             <div key={scale.id * 100} >
-    //             <ScaleCard 
-    //             id={scale.id} 
-    //             key={scale.id} 
-    //             name={scale.name} 
-    //             notes={scale.notes} 
-    //             description={scale.description} 
-    //             allScales={this.props.scales}
-
-    //             />
-    //             <div key={scale.id * 10} className="parallax"></div>
-    //             </div>)
-
-                
-
-                
-    // }
-
-    
-
     render() {
         // console.log(this.props)
         return(
