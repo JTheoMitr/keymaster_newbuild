@@ -34,6 +34,8 @@ const ScaleCard = ({allScales, name, id, description, notes}) => {
                 ? <p><a href='https://www.youtube.com/watch?v=-amnre-0I3w' target="_blank" rel="noreferrer">Songs in Harmonic Minor</a></p>
                 : (name.includes('Melodic Minor'))
                 ? <p><a href='https://www.youtube.com/watch?v=-8CLp1uSFoA' target="_blank" rel="noreferrer">Songs in Melodic Minor</a></p>
+                : (name.includes('Melodic Major'))
+                ? <p><a href='https://www.youtube.com/watch?v=d20wwTZxOZ8' target="_blank" rel="noreferrer">Melodic Major (Mixolydian b6) Walkthrough</a></p>
                 : (name.includes('Major') && !(name.includes('Harmonic')) && !(name.includes('Melodic')))
                 ? <p><a href='https://www.youtube.com/playlist?list=PLBC7CA504C2931E3E' target="_blank" rel="noreferrer">Songs in the Major key</a></p>
                 : (name.includes('Minor') && !(name.includes('Harmonic')) && !(name.includes('Melodic')))
