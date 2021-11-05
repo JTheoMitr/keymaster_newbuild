@@ -25,13 +25,11 @@
 }
 
 .navbar {
-  text-align: center;
-  align-content: center;
-  background-image: url('./images/KMaster4.png');
-  background-size: cover;
-  background-position-y: 52%;
-  margin: 10px;
-  
+  background-image: url('./images/KMaster6.png');
+  background-repeat: no-repeat;
+  background-position:70% 53%;
+  background-size: 110%;
+  margin: 5px;
 }
 
 .navButton {
