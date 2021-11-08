@@ -17,13 +17,13 @@ const ScaleCard = ({allScales, name, id, description, notes}) => {
 
             { // check if relative scales exist
                 (relatives.length > 0)
-                ? <p>Relative Scales: {relatives.map(rel => <Link key={rel.id} to={`/scales/${rel.id}`}>{rel.name}</Link>)}</p> 
+                ? <p>All Relative Scales: {relatives.map(rel => <Link key={rel.id} to={`/scales/${rel.id}`}>{rel.name}</Link>)}</p> 
                 : <p></p>
             }
 
             { // check if parallel scales exist
                 (parallels.length > 0)
-                ? <p>Parallel Scales: {parallels.map(par => par.name)}</p>
+                ? <p>All Parallel Scales: {parallels.map(par => par.name)}</p>
                 : <p></p>
             }
 
