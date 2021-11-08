@@ -4,7 +4,7 @@ const About = () => {
   return (
     <div className="card">
         <h1>About:</h1>
-      <h2>Klimakes is a musical scale database that will iterate through any supplied set of notes and return the relative scale for that particular key signature</h2>
+      <h2>Key Master is a music application that can iterate through any set of notes and determine all possible key signatures and relative scales</h2>
     </div>
   );
 };
