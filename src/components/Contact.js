@@ -7,7 +7,6 @@ const Contact = () => {
       <h2>John Mitropoulos</h2>
       <h2>Austin, TX</h2>
       <h3>jmitropoulos@alumni.berklee.edu</h3>
-      <h3>781-799-6236</h3>
     </div>
   );
 };
