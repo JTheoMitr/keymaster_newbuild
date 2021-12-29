@@ -9,45 +9,49 @@ const SearchBar = (props) => {
         setName(event.target.value);
       };
          
-        const searchedScales = 
+    const searchedScales = 
 
-            // check for value(s) in search params, otherwise display all scales
+        // check for value(s) in search params, otherwise display all scales
             
-            props.allScales.filter(scale => 
+        props.allScales.filter(scale => 
 
-                name.length > 0 ?
+            name.length > 0 ?
+                name.toUpperCase().split('-').every(elem =>
+                    (scale.notes.toUpperCase().split('-').includes(elem)) || elem === "" ) :
 
-                    name.toUpperCase().split('-').every(elem =>
-                        
-                        (scale.notes.toUpperCase().split('-').includes(elem)) || elem === "" ) :
-
-                    !!scale.name)
+            !!scale.name
+        )
 
 
-            return(
+    return(
 
-                <div>
-                    <input onChange={onChange} type="text" name="name" placeholder="Search Notes in Dash Format (A-B-C#-D etc)" value={name}></input>
+        <div>
 
-                    {searchedScales.map(scale => 
+            <input 
+            onChange={onChange} type="text" name="name" 
+            placeholder="Search Notes in Dash Format (A-B-C#-D etc)" value={name}>
+            </input>
 
-                        <div key={scale.id * 100} >
+            {searchedScales.map(scale => 
 
-                            <ScaleCard 
-                                id={scale.id} 
-                                key={scale.id} 
-                                name={scale.name} 
-                                notes={scale.notes} 
-                                description={scale.description} 
-                                allScales={props.allScales}
-                            />
+                <div key={scale.id * 100} >
+
+                    <ScaleCard 
+                        id={scale.id} 
+                        key={scale.id} 
+                        name={scale.name} 
+                        notes={scale.notes} 
+                        description={scale.description} 
+                        allScales={props.allScales}
+                    />
                             
-                            <div key={scale.id * 10} className="parallax"></div>
+                    <div key={scale.id * 10} className="parallax"></div>
                         
-                        </div>)}
-
                 </div>
-            )
+            )}
+
+        </div>
+    )
 
 }
 
