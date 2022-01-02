@@ -1,4 +1,5 @@
 import React, { useState } from 'react'
+import SearchedScales from './SearchedScales'
 import ScaleCard from './ScaleCard'
 
 const SearchBar = (props) => {
@@ -8,19 +9,6 @@ const SearchBar = (props) => {
     const onChange = (event) => {
         setName(event.target.value);
       };
-         
-    const searchedScales = 
-
-        // check for value(s) in search params, otherwise display all scales
-            
-        props.allScales.filter(scale => 
-
-            name.length > 0 ?
-                name.toUpperCase().split('-').every(elem =>
-                    (scale.notes.toUpperCase().split('-').includes(elem)) || elem === "" ) :
-
-            !!scale.name
-        )
 
 
     return(
@@ -32,7 +20,7 @@ const SearchBar = (props) => {
             placeholder="Search Notes in Dash Format (A-B-C#-D etc)" value={name}>
             </input>
 
-            {searchedScales.map(scale => 
+            {SearchedScales(props.allScales, name).map(scale => 
 
                 <div key={scale.id * 100} >
 
